@@ -7,7 +7,8 @@
       "url": "http://node:9001/tests/pages/",
       "browser": "firefox",
       "host": "firefox",
-      "smartWait": 5000
+      "smartWait": 5000,
+      "windowSize": "maximize"
     }
   },
   "include": {

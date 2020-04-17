@@ -1,10 +1,10 @@
 .cookie-consent-popup {
     display: none;
-    /*position: fixed;*/
-    /*bottom: 0;*/
-    /*left: 0;*/
-    /*width: 100%;*/
-    /*z-index: 999999;*/
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999999;
 }
 
 .cookie-consent-popup.open {
