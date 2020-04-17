@@ -1,7 +1,7 @@
 /* global Feature Scenario */
 
 const assert = require('assert')
-const wait = 5
+const wait = 15
 
 Feature('Cookie Consent')
 
