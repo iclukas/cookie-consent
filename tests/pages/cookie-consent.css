@@ -19,27 +19,19 @@
 }
 
 .cookie-consent-controls {
-    max-height: 0;
-    overflow: hidden;
-    -webkit-transition: max-height 0.5s ease-out;
-    -moz-transition: max-height 0.5s ease-out;
-    transition: max-height 0.5s ease-out;
+    display: none;
 }
 
 .cookie-consent-controls.open {
-    max-height: 600px;
+   display: block;
 }
 
 .cookie-consent-details {
-    max-height: 0;
-    overflow: hidden;
-    -webkit-transition: max-height 0.5s ease-out;
-    -moz-transition: max-height 0.5s ease-out;
-    transition: max-height 0.5s ease-out;
+    display: none;
 }
 
 .cookie-consent-details.open {
-    max-height: 600px;
+    display: block;
 }
 
 @keyframes show {
