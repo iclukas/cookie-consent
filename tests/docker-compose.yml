@@ -11,7 +11,7 @@ services:
     expose:
       - '9001'
   firefox:
-    image: selenium/standalone-firefox
+    image: selenium/standalone-firefox-debug:3.141.59-oxygen
     depends_on:
       - node
     environment:
@@ -23,7 +23,7 @@ services:
       # Mount shm also for firefox, see https://github.com/SeleniumHQ/docker-selenium#running-the-images
       - /dev/shm:/dev/shm
   chrome:
-    image: selenium/standalone-chrome
+    image: selenium/standalone-chrome-debug:3.141.59-oxygen
     depends_on:
       - node
     environment:
