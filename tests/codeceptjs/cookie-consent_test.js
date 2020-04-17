@@ -6,6 +6,7 @@ const waitTime = 10
 Feature('Cookie Consent')
 
 Scenario('should work correctly', async function (I) {
+  I.wait(10)
   // initial state
   I.amOnPage('cookie-consent.html')
   I.dontSeeCookie('cookie_consent_status')
