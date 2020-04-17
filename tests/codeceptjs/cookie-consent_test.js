@@ -7,6 +7,7 @@ Feature('Cookie Consent')
 Scenario('should work correctly', async function (I) {
   // initial state
   I.amOnPage('cookie-consent.html')
+  I.waitInUrl('/tests/pages/cookie-consent.html', 5)
   I.dontSeeCookie('cookie_consent_status')
   I.dontSeeCookie('_ga')
   I.dontSeeCookie('_gat')
