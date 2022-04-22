@@ -221,3 +221,12 @@ cc.afterSave = function (cc) {
   window.location.reload()
 }
 ```
+
+```javascript
+cc.afterOpen = function (cc) {
+    console.log('dialog was opened')
+}
+cc.afterClose = function (cc) {
+    console.log('dialog was closed')
+}
+```
