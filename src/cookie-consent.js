@@ -35,12 +35,14 @@ CookieConsent.prototype.open = function () {
   if (this.popup) {
     this.popup.classList.add('open')
   }
+  this.afterOpen(this)
 }
 
 CookieConsent.prototype.close = function () {
   if (this.popup) {
     this.popup.classList.remove('open')
   }
+  this.afterClose(this)
 }
 
 CookieConsent.prototype.openControls = function () {
@@ -301,6 +303,8 @@ CookieConsent.prototype.mergeObjects = function () {
   return res
 }
 
-CookieConsent.prototype.afterSave = function () {}
+CookieConsent.prototype.afterOpen =
+  CookieConsent.prototype.afterClose =
+    CookieConsent.prototype.afterSave = function () {}
 
 export default CookieConsent
